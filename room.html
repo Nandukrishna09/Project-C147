@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene background="color:gray">
+        <a-camera wasd-controls-enabled="false" position="0 8 20"></a-camera>
+
+        <a-assets>
+            <a-assets-item id="room-obj" src="./room/tinker.obj"></a-assets-item>
+            <a-assets-item id="room-mtl" src="./room/obj.mtl"></a-assets-item>
+            <a-assets-item id="room-gltf" src="./room.glb"></a-assets-item>
+
+        </a-assets>
+
+        <a-entity obj-model="obj: #room-obj; mtl: #room-mtl" position="5 0 0" rotation="-90 -40 0" scale="0.1 0.1 0.1">
+
+        </a-entity>
+        
+    </a-scene>
+</body>
+
+</html>
